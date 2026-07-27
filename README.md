@@ -95,6 +95,7 @@ Icon=/path/to/multitrack-mpv/icon.png
 Terminal=false
 Categories=AudioVideo;Player;Qt;
 StartupWMClass=multitrack-mpv
+MimeType=video/mp4;video/mkv;video/x-matroska;video/webm;video/avi;video/quicktime;
 ```
 
 ---
