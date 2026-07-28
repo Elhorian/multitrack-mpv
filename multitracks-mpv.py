@@ -206,6 +206,12 @@ class MultitrackApp(QMainWindow):
         self.init_ui()
         self.load_settings()
 
+        # Check if a file path was passed via CLI ("Open With...")
+        if len(sys.argv) > 1:
+            file_path = sys.argv[1]
+            if os.path.exists(file_path):
+                self.file_input.setText(file_path)
+                self.load_tracks(file_path)
     def init_ui(self):
         central = QWidget()
         self.setCentralWidget(central)
